@@ -12,6 +12,10 @@ let form = document.querySelector("form");
                 document.querySelector("#sub").value = "Submit"
 
             });
+        const elsInput = document.querySelectorAll(".form__input");
+        elsInput.forEach(elInput => {
+            elInput.value = "";
+        })
         alert("E'tiboringiz uchun rahmat! Tez orada siz bilan bog'lanamiz.");
 
     })
