@@ -81,6 +81,12 @@ select:-webkit-autofill:focus {
     color: rgba(255, 255, 255,0.75);
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
     height: 100%;
     display: flex;
@@ -163,11 +169,15 @@ main {
     font-size: 32px;
     font-weight: normal;
     line-height: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+}
+.section__span {
+    text-transform: uppercase;
+    color: #f1c40f;
 }
 .section__paragraph {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
 }
 .form {
@@ -219,6 +229,9 @@ main {
     margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease,transform 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: block;
 }
 .form__button:hover {
     background-color: #370040;
@@ -257,7 +270,7 @@ main {
     }
     .section__paragraph {
         color: var(--purple-color);
-        font-size: 18px;
+        font-size: 14px;
     }
     .section__contact {
         background-color: #fff;
