@@ -338,7 +338,7 @@ main {
         font-size: 15px;
         background-color: var(--purple-color-light-75);
         color: #fff;
-        padding-bottom: 100px;
+        margin-bottom: 100px;
     }
     .location {
         left: 50%;
