@@ -241,6 +241,17 @@ main {
 .form__button:active {
     transform: scale(0.9);
 }
+.location {
+    position: absolute;
+    bottom: 20px;
+    left: calc(125 / 720 * 100%);
+    cursor: pointer;
+    color: #220028;
+}
+.location__icon {
+    width: 20px;
+    height: 20px;
+}
 
 @media only screen and (max-width: 875px) {
     .form__input {
@@ -291,6 +302,10 @@ main {
         font-size: 15px;
         background-color: var(--purple-color-light-75);
         color: #fff;
+    }
+    .location {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
