@@ -254,6 +254,7 @@ main {
 }
 
 .modal {
+    width: 500px;
     position: absolute;
     background-color: #2ecc71;
     border-radius: 10px;
@@ -343,6 +344,7 @@ main {
         transform: translateX(-50%);
     }
     .modal {
+        width: calc(500 / 720 * 100%);
         padding: 20px 15px;
         font-size: 16px;
     }
